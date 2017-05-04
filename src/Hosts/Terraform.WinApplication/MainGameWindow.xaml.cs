@@ -12,17 +12,24 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Terraform.WinApplication.ViewModels;
 
 namespace Terraform.WinApplication
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for MainGameWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainGameWindow : Window
     {
-        public MainWindow()
+        private MainGameViewModel viewModel = new MainGameViewModel();
+
+        public MainGameWindow()
         {
             InitializeComponent();
+
+            this.viewModel.LoadJobs();
+
+            this.DataContext = this.viewModel;
         }
     }
 }

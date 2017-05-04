@@ -1,6 +1,8 @@
-﻿namespace Terraform.WorkDomain
+﻿using Terraform.CommonDomain;
+
+namespace Terraform.WorkDomain
 {
-    public class Requirement
+    public abstract class Requirement : Entity
     {
     }
 }
