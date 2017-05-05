@@ -27,6 +27,7 @@ namespace Terraform.WinApplication
         {
             InitializeComponent();
 
+            this.viewModel.LoadStockpiles();
             this.viewModel.LoadJobs();
 
             this.DataContext = this.viewModel;

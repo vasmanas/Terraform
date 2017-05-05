@@ -24,6 +24,14 @@ namespace Terraform.WorkDomain
 
         public int RequiredQuantity { get; private set; }
 
+        public int MissingQuantity
+        {
+            get
+            {
+                return this.RequiredQuantity - this.StockedQuantity;
+            }
+        }
+
         public int AddResource(int quantity)
         {
             if (quantity < 0)

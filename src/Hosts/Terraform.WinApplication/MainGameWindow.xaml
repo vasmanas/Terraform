@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Terraform.WinApplication"
+        xmlns:localuc="clr-namespace:Terraform.WinApplication.UserControls"
         mc:Ignorable="d"
         Title="MainGameWindow" Height="350" Width="525">
     <Grid>
@@ -27,21 +28,34 @@
             </ItemsControl.ItemsPanel>
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <Border Height="24">
+                    <Border>
                         <Grid>
                             <Grid.RowDefinitions>
+                                <RowDefinition Height="24" />
                                 <RowDefinition Height="*" />
                             </Grid.RowDefinitions>
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="30" />
                                 <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
-                            <Label Grid.Column="0" Grid.Row="0" Content="{Binding Path=DisplayName}"/>
-                            <Label Grid.Column="1" Grid.Row="0" Content="{Binding Path=DisplayName}"/>
+                            <Label Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Content="{Binding Path=DisplayName}"/>
+                            <ItemsControl ItemsSource="{Binding Requirements}" 
+                                      DataContext="{Binding}"
+                                      Grid.Column="1" Grid.Row="1">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <localuc:ResourceQuantityRequirementView Requirement="{Binding Path=SelectedItem}"/>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
                         </Grid>
                     </Border>
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListView>
+
+        <Canvas>
+            
+        </Canvas>
     </Grid>
 </Window>

@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Terraform.Core", "src\Frame
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Terraform.CommonDomain", "src\Domains\Terraform.CommonDomain\Terraform.CommonDomain.csproj", "{5F737CDB-AEC0-482F-B280-C7E407F06199}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Terraform.LandscapeDomain", "src\Domains\Terraform.LandscapeDomain\Terraform.LandscapeDomain.csproj", "{DF4E05D9-A2D2-44C0-AA6B-A1513269839D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{5F737CDB-AEC0-482F-B280-C7E407F06199}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F737CDB-AEC0-482F-B280-C7E407F06199}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F737CDB-AEC0-482F-B280-C7E407F06199}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF4E05D9-A2D2-44C0-AA6B-A1513269839D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF4E05D9-A2D2-44C0-AA6B-A1513269839D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF4E05D9-A2D2-44C0-AA6B-A1513269839D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF4E05D9-A2D2-44C0-AA6B-A1513269839D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,5 +61,6 @@ Global
 		{2C40ED90-EC0B-4F5D-94A8-9A347745029B} = {9BAC1BB3-D768-4EDF-918D-9DD8B0D41203}
 		{CBC6FDB7-5880-442E-8870-9D6D64BFBABD} = {08794C19-859D-4FB9-9F49-DAA2A2F87FB1}
 		{5F737CDB-AEC0-482F-B280-C7E407F06199} = {9BAC1BB3-D768-4EDF-918D-9DD8B0D41203}
+		{DF4E05D9-A2D2-44C0-AA6B-A1513269839D} = {9BAC1BB3-D768-4EDF-918D-9DD8B0D41203}
 	EndGlobalSection
 EndGlobal
