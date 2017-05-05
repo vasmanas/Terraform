@@ -6,7 +6,7 @@ namespace Terraform.LandscapeDomain
 {
     public class Tile : Entity
     {
-        private readonly List<int> improvements = new List<int>();
+        private readonly List<AggregateKey> supplements = new List<AggregateKey>();
 
         public Tile(Terrain terrain)
         {
@@ -15,12 +15,12 @@ namespace Terraform.LandscapeDomain
 
         public Terrain Terrain { get; private set; }
 
-        // TODO: add different improvements like vegetation, rubble, water, canyon, buildings
-        public IReadOnlyCollection<int> Improvements
+        // TODO: add different supplements like vegetation, rubble, water, canyon, buildings
+        public IReadOnlyCollection<AggregateKey> Supplements
         {
             get
             {
-                return this.improvements.AsReadOnly();
+                return this.supplements.AsReadOnly();
             }
         }
 
