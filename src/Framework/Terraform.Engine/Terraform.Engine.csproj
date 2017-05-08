@@ -43,5 +43,19 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TurnCalculator.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Domains\Terraform.GameDomain\Terraform.GameDomain.csproj">
+      <Project>{88d3288b-060a-4027-8216-b4da1a189619}</Project>
+      <Name>Terraform.GameDomain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Domains\Terraform.LandscapeDomain\Terraform.LandscapeDomain.csproj">
+      <Project>{df4e05d9-a2d2-44c0-aa6b-a1513269839d}</Project>
+      <Name>Terraform.LandscapeDomain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Domains\Terraform.ResourceDomain\Terraform.ResourceDomain.csproj">
+      <Project>{520057fd-3630-4b68-a28d-e9ca84256d34}</Project>
+      <Name>Terraform.ResourceDomain</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

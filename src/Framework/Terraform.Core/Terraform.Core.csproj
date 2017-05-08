@@ -40,7 +40,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dependency\StaticLocator.cs" />
+    <Compile Include="Dependency\InMemoryLocator.cs" />
+    <Compile Include="Dependency\IServiceLocator.cs" />
+    <Compile Include="Dependency\ServiceLocatorExtensions.cs" />
+    <Compile Include="Logging\EmptyLog.cs" />
+    <Compile Include="Logging\ILog.cs" />
+    <Compile Include="Logging\Log.cs" />
+    <Compile Include="Logging\Log.Factory.cs" />
+    <Compile Include="Messaging\Bus.cs" />
+    <Compile Include="Messaging\Command.cs" />
+    <Compile Include="Messaging\EnumerableRequest.cs" />
+    <Compile Include="Messaging\Event.cs" />
+    <Compile Include="Messaging\IBus.cs" />
+    <Compile Include="Messaging\IMessageHandler.cs" />
+    <Compile Include="Messaging\InMemoryBus.cs" />
+    <Compile Include="Messaging\IRequestHandler.cs" />
+    <Compile Include="Messaging\Message.cs" />
+    <Compile Include="Messaging\Request.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Storage\Aggregate.cs" />
+    <Compile Include="Storage\AggregateKey.cs" />
+    <Compile Include="Storage\Entity.cs" />
+    <Compile Include="Storage\InMemoryRepository.cs" />
+    <Compile Include="Storage\IRepository.cs" />
+    <Compile Include="Storage\ValueObject.cs" />
+    <Compile Include="TypeExtensions.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

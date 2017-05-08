@@ -50,10 +50,6 @@
       <Project>{cbc6fdb7-5880-442e-8870-9d6d64bfbabd}</Project>
       <Name>Terraform.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Terraform.CommonDomain\Terraform.CommonDomain.csproj">
-      <Project>{5f737cdb-aec0-482f-b280-c7e407f06199}</Project>
-      <Name>Terraform.CommonDomain</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Terraform.ResourceDomain\Terraform.ResourceDomain.csproj">
       <Project>{520057FD-3630-4B68-A28D-E9CA84256D34}</Project>
       <Name>Terraform.ResourceDomain</Name>

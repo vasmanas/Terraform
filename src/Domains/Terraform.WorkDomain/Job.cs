@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using Terraform.CommonDomain;
+using Terraform.Core.Storage;
 
 namespace Terraform.WorkDomain
 {

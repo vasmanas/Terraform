@@ -1,5 +1,5 @@
 ﻿using System;
-using Terraform.CommonDomain;
+using Terraform.Core.Storage;
 
 namespace Terraform.LandscapeDomain
 {

@@ -1,8 +1,10 @@
-﻿namespace Terraform.Engine
+﻿using Terraform.GameDomain;
+
+namespace Terraform.Engine
 {
     public class TurnCalculator
     {
-        public void Calculate()
+        public void Calculate(Game game)
         {
             // TODO: 
             // 1. Resource growth

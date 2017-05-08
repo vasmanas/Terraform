@@ -4,6 +4,16 @@ namespace Terraform.ResourceDomain
 {
     public class GlobalStockpile : Stockpile
     {
+        public GlobalStockpile(Resource resource, int initialQuantity) : this(resource)
+        {
+            if (initialQuantity <= 0)
+            {
+                throw new ArgumentException("Value must be greater than zero", nameof(initialQuantity));
+            }
+
+            this.Quantity = initialQuantity;
+        }
+
         public GlobalStockpile(Resource resource) : base(resource)
         {
         }

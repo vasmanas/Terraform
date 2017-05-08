@@ -104,10 +104,6 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\..\Domains\Terraform.CommonDomain\Terraform.CommonDomain.csproj">
-      <Project>{5F737CDB-AEC0-482F-B280-C7E407F06199}</Project>
-      <Name>Terraform.CommonDomain</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\Domains\Terraform.ResourceDomain\Terraform.ResourceDomain.csproj">
       <Project>{520057fd-3630-4b68-a28d-e9ca84256d34}</Project>
       <Name>Terraform.ResourceDomain</Name>
@@ -115,6 +111,10 @@
     <ProjectReference Include="..\..\Domains\Terraform.WorkDomain\Terraform.WorkDomain.csproj">
       <Project>{2c40ed90-ec0b-4f5d-94a8-9a347745029b}</Project>
       <Name>Terraform.WorkDomain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\Terraform.Core\Terraform.Core.csproj">
+      <Project>{CBC6FDB7-5880-442E-8870-9D6D64BFBABD}</Project>
+      <Name>Terraform.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -58,6 +58,22 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Domains\Terraform.GameDomain\Terraform.GameDomain.csproj">
+      <Project>{88D3288B-060A-4027-8216-B4DA1A189619}</Project>
+      <Name>Terraform.GameDomain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Domains\Terraform.LandscapeDomain\Terraform.LandscapeDomain.csproj">
+      <Project>{DF4E05D9-A2D2-44C0-AA6B-A1513269839D}</Project>
+      <Name>Terraform.LandscapeDomain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Domains\Terraform.ResourceDomain\Terraform.ResourceDomain.csproj">
+      <Project>{520057FD-3630-4B68-A28D-E9CA84256D34}</Project>
+      <Name>Terraform.ResourceDomain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\Terraform.Core\Terraform.Core.csproj">
+      <Project>{CBC6FDB7-5880-442E-8870-9D6D64BFBABD}</Project>
+      <Name>Terraform.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Framework\Terraform.Engine\Terraform.Engine.csproj">
       <Project>{e17cf70b-6b5d-4197-b535-dac6e2d06180}</Project>
       <Name>Terraform.Engine</Name>
